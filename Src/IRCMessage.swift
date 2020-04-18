@@ -1,10 +1,10 @@
 public struct IRCMessage {
-    var server: Optional<String> = .none
-    var nick: Optional<String> = .none
-    var user: Optional<String> = .none
-    var host: Optional<String> = .none
-    var command: String = ""
-    var params: [String] = []
+    public var server: Optional<String> = .none
+    public var nick: Optional<String> = .none
+    public var user: Optional<String> = .none
+    public var host: Optional<String> = .none
+    public var command: String = ""
+    public var params: [String] = []
     
-    init() {}
+    public init() {}
 }
