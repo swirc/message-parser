@@ -1,7 +1,9 @@
 import Foundation
 
-final class IRCMessageParser {
-    func parse(rawMessage: String) -> Optional<IRCMessage> {
+final public class IRCMessageParser {
+    public init() {}
+
+    public func parse(rawMessage: String) -> Optional<IRCMessage> {
         if rawMessage.count > 510 {
             return .none
         }
